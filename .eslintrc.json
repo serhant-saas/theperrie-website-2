@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["simple-import-sort", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn",
+    "react/prop-types": 0,
+    "no-nested-ternary": "error"
+  },
+  "ignorePatterns": [
+    "node_modules",
+    ".vercel",
+    "sanity/types.ts",
+    "dist",
+    ".next",
+    "components/shadcn-ui"
+  ]
+}
